@@ -13,7 +13,7 @@ L	[a-zA-Z_]
 %% 
 
 [ \t\r\n]			{}
-"print"				{ return TOK_PRINT; }
+"ilustre"			{ return TOK_ilustre; }
 "="					{ return '=';  }
 "*"					{ return '*'; }
 "/"					{ return '/'; }
@@ -22,12 +22,13 @@ L	[a-zA-Z_]
 "("					{ return '('; }
 ")"					{ return ')'; }
 "^"					{ return '^'; }
-[<>!{}]		{ return yytext[0]; }
-"and"		{ return TOK_AND; }
-"or"		{ return TOK_OR; }
-"if"		{ return TOK_IF; }
-"else"		{ return TOK_ELSE; }
-"while"		{ return TOK_WHILE; }
+[<>!{}]				{ return yytext[0]; }
+"ee"				{ return TOK_ee; }
+"ou"				{ return TOK_ou; }
+"caso"				{ return TOK_caso; }
+"casonao"			{ return TOK_casonao; }
+"enquanto"			{ return TOK_enquanto; }
+";"             	{ return ';';}
 
 {D}+			{ yylval.args.intv = atoi(yytext);
 						return TOK_INTEGER; }

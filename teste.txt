@@ -1,5 +1,0 @@
-A = 10
-B = 20.7^A
-C = (A+B)/B*C
-D = A + B
-print C

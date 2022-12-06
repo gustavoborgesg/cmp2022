@@ -1,0 +1,22 @@
+x = 1;
+y = 5;
+
+enquanto (x <= 50) {
+  caso (x < y){
+    x = x + 2;
+  }
+  casonao {
+    y = y + 1;
+    x = x + 1;
+  }
+
+  caso ((x == y) ee (x + y) < 40) {
+  y = y;
+  ilustre x;
+  }
+}
+
+x = (x * (3.5 + y)) / 7.7;
+
+ilustre x;
+ilustre y;
